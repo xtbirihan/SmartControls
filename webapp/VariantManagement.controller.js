@@ -3,6 +3,6 @@ sap.ui.define([
 ], function(Controller) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.smartcontrols.Personalization");
+	return Controller.extend("sap.ui.demo.smartcontrols.VariantManagement");
 
 });

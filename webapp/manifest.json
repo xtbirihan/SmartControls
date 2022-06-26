@@ -25,7 +25,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.ui.demo.smartcontrols.Personalization",
+			"viewName": "sap.ui.demo.smartcontrols.VariantManagement",
 			"type": "XML",
 			"async": true
 		},
