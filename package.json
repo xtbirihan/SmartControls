@@ -1,0 +1,14 @@
+{
+  "name": "sap.ui.comp.tutorial.smartcontrols",
+  "version": "1.0.0",
+  "description": "Sample: Smart Controls",
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build"
+  },
+  "author": "H Tugay Birihan",
+  "license": "ISC",
+  "devDependencies": {
+    "@ui5/cli": "^2.0.0"
+  }
+}
