@@ -25,7 +25,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.ui.demo.smartcontrols.SmartTable",
+			"viewName": "sap.ui.demo.smartcontrols.Personalization",
 			"type": "XML",
 			"async": true
 		},
