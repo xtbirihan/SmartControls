@@ -1,7 +1,7 @@
 {
-	"_version": "1.12.0",
+	"_version": "1.8.0",
 	"sap.app": {
-		"id": "sap.ui.demo.smartControls",
+		"id": "sap.ui.demo.smartcontrols",
 		"type": "application",
 		"title": "SAPUI5 Smart Controls",
 		"description": "A simple app that explains the most important concepts of smart controls in SAPUI5",
@@ -25,7 +25,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.ui.demo.smartControls.SmartField",
+			"viewName": "sap.ui.demo.smartcontrols.SmartLink",
 			"type": "XML",
 			"async": true
 		},
@@ -39,12 +39,8 @@
 		},
 		"models": {
 			"": {
-				"dataSource": "mainService",
-				"settings": {
-					"defaultBindingMode": "TwoWay"
-				}
+				"dataSource": "mainService"
 			}
 		}
 	}
 }
-

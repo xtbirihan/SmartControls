@@ -1,5 +1,5 @@
 sap.ui.define([
-	"sap/ui/demo/smartControls/localService/mockserver"
+	"sap/ui/demo/smartcontrols/localService/mockserver"
 ], function (mockserver) {
 	"use strict";
 
@@ -9,4 +9,3 @@ sap.ui.define([
 	// initialize the embedded component on the HTML page
 	sap.ui.require(["sap/ui/core/ComponentSupport"]);
 });
-

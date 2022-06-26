@@ -1,6 +1,6 @@
 {
 	"sap.app": {
-		"id": "sap.ui.comp.tutorial.smartControls",
+		"id": "sap.ui.comp.tutorial.smartcontrols",
 		"applicationVersion": {
 			"version": "1.0.0"
 		}
@@ -14,13 +14,14 @@
 					"webapp/localService/metadata.xml",
 					"webapp/localService/mockdata/Products.json",
 					"webapp/localService/mockserver.js",
+					"webapp/shellMock/UShellCrossApplicationNavigationMock.js",
 					"webapp/lrep/component-test-changes.json",
 					"webapp/Component.js",
 					"webapp/index.html",
 					"webapp/initMockServer.js",
 					"webapp/manifest.json",
-					"webapp/SmartField.controller.js",
-					"webapp/SmartField.view.xml",
+					"webapp/SmartLink.controller.js",
+					"webapp/SmartLink.view.xml",
 					"manifest.json"
 				]
 			}

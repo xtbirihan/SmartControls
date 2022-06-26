@@ -1,14 +1,15 @@
 sap.ui.define([
-	'sap/ui/core/UIComponent', 'sap/ui/fl/FakeLrepConnectorLocalStorage'
+	'sap/ui/core/UIComponent', 
+    'sap/ui/fl/FakeLrepConnectorLocalStorage'
 ], function(UIComponent, FakeLrepConnectorLocalStorage) {
 	"use strict";
 
-	return UIComponent.extend("sap.ui.demo.smartControls.Component", {
+	return UIComponent.extend("sap.ui.demo.smartcontrols.Component", {
 		metadata: {
 			manifest: "json"
 		},
 		init: function() {
-			FakeLrepConnectorLocalStorage.enableFakeConnector(sap.ui.require.toUrl("sap/ui/demo/smartControls/lrep/component-test-changes.json"));
+			FakeLrepConnectorLocalStorage.enableFakeConnector(sap.ui.require.toUrl("sap/ui/demo/smartcontrols/lrep/component-test-changes.json"));
 			UIComponent.prototype.init.apply(this, arguments);
 		},
 		destroy: function() {
@@ -18,4 +19,3 @@ sap.ui.define([
 	});
 
 });
-

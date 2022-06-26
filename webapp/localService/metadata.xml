@@ -11,52 +11,16 @@
 					<PropertyRef Name="ProductId"/>
 				</Key>
 				<Property Name="ProductId" Type="Edm.String"/>
-				<Property Name="Price" Type="Edm.String"
-					sap:unit="CurrencyCode" MaxLength="3" sap:label="Price"
-					sap:updatable="true"/>
-				<Property Name="CurrencyCode" Type="Edm.String"
-					MaxLength="3" sap:label="Currency" sap:semantics="currency-code"
-					sap:updatable="true"/>
-			</EntityType>
-			<EntityType Name="Currency">
-				<Key>
-					<PropertyRef Name="CURR"/>
-				</Key>
-				<Property Name="CURR" Type="Edm.String" MaxLength="4"
-					sap:display-format="UpperCase" sap:text="DESCR" sap:label="Currency Code"
-					sap:filterable="false"/>
-				<Property Name="DESCR" Type="Edm.String" MaxLength="25"
-					sap:label="Description"/>
+				<Property Name="Name" Type="Edm.String" sap:label="My Favorite Product"/>
 			</EntityType>
 			<EntityContainer m:IsDefaultEntityContainer="true"
-				sap:supported-formats="atom json">
+				sap:supported-formats="json">
 				<EntitySet Name="Products" EntityType="EPM_REF_APPS_PROD_MAN_SRV.Product"/>
-				<EntitySet Name="Currency" EntityType="EPM_REF_APPS_PROD_MAN_SRV.Currency"/>
 			</EntityContainer>
-			<Annotations Target="EPM_REF_APPS_PROD_MAN_SRV.Product/CurrencyCode"
+			<Annotations Target="EPM_REF_APPS_PROD_MAN_SRV.Product/Name"
 				xmlns="http://docs.oasis-open.org/odata/ns/edm">
-				<Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
-					<Record>
-						<PropertyValue Property="Label" String="Currency"/>
-						<PropertyValue Property="CollectionPath" String="Currency"/>
-						<PropertyValue Property="SearchSupported" Bool="true"/>
-						<PropertyValue Property="Parameters">
-							<Collection>
-								<Record Type="com.sap.vocabularies.Common.v1.ValueListParameterOut">
-									<PropertyValue Property="LocalDataProperty"
-										PropertyPath="CurrencyCode"/>
-									<PropertyValue Property="ValueListProperty"
-										String="CURR"/>
-								</Record>
-								<Record
-									Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
-									<PropertyValue Property="ValueListProperty"
-										String="DESCR"/>
-								</Record>
-							</Collection>
-						</PropertyValue>
-					</Record>
-				</Annotation>
+				<Annotation Term="com.sap.vocabularies.Common.v1.SemanticObject"
+					String="tutorial_03_Name"/>
 			</Annotations>
 		</Schema>
 	</edmx:DataServices>

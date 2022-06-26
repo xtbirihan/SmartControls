@@ -4,6 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	return {
+
 		init: function() {
 			// mock the service call from manifest.json
 			var oMockServer = new MockServer({
@@ -17,7 +18,7 @@ sap.ui.define([
 			});
 
 			// simulate
-			var sPath = sap.ui.require.toUrl("sap/ui/demo/smartControls/localService");
+			var sPath = sap.ui.require.toUrl("sap/ui/demo/smartcontrols/localService");
 			oMockServer.simulate(sPath + "/metadata.xml", {
 				sMockdataBaseUrl: sPath + "/mockdata",
 				bGenerateMissingMockData: true
